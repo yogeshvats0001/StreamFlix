@@ -1,0 +1,37 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+.rows__posters {
+  display: flex;
+  /* for horizontal scrolling */
+  overflow-x: scroll;
+  /* for avoiding vertical scrolling */
+  overflow-y: hidden;
+  padding: 20px;
+}
+
+/* to hide the scollbar without removing the functionality */
+.rows__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 120px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
