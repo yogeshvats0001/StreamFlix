@@ -34,11 +34,10 @@ function Banner() {
         backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
         backgroundPosition: "center center",
-        height: "500px",
+        height: "418px",
       }}
     >
       {/* <<< Background image */}
-
       <div className="banner__contents">
         {/* title */}
         <h1 className="banner__title">
