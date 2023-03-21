@@ -1,16 +1,40 @@
 .nav {
-  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  height: 30px;
+  z-index: 1;
+
+  /* display: flex;
+  justify-content: space-between; */
+
+  /* Animation for navbar in case of change in any value*/
+  transition-timing-function: ease-in;
+  transition: all 0.5;
 }
 
+.nav__black {
+  background-color: #111;
+}
 .nav__logo {
-  width: 9.25rem;
+  /* width: 9.25rem;
   height: 2.5rem;
   color: rgba(229, 9, 20, 1);
   fill: currentColor;
-  display: block;
+  display: block; */
+  width: 80px;
+  height: 30px;
+  position: fixed;
+  left: 20px;
+  object-fit: contain;
 }
 
 .nav__avatar {
-  width: 9.25rem;
-  height: 2.5rem;
+  /* width: 4.19rem;
+  height: 2.3rem; */
+  width: 30px;
+  position: fixed;
+  right: 20px;
+  object-fit: contain;
 }
